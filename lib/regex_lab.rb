@@ -20,5 +20,5 @@ end
 
 def valid_phone_number?(phone)
   # binding.pry
-  phone_breakdown = phone.match(/(\d+)-(\d+)-(\d+)/) != nil
+  phone_breakdown = phone.scan(/\d+/) != nil
 end

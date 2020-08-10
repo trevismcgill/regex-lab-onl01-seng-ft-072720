@@ -19,7 +19,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  capture_num = phone.scan(/(\d)/)
+  capture_num = phone.scan(/(\d{10})/)
   binding.pry
   capture_num.match(/\d{10}/)
 end

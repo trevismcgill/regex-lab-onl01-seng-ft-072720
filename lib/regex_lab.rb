@@ -19,6 +19,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
+  binding.pry
   phone_breakdown = phone.scan(/(\d+)-(\d+)-(\d+)/)
-  phone_breakdown != nil
 end

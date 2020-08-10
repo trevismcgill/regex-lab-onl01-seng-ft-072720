@@ -20,6 +20,6 @@ end
 
 def valid_phone_number?(phone)
 cap_num = phone.scan(/(^\d*$)/)
-s_cap_num = cap_num.join
+cap_num.join.match(/\d{10}/)
 binding.pry
 end

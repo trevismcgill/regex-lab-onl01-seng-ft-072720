@@ -21,5 +21,5 @@ end
 def valid_phone_number?(phone)
   # binding.pry
   capture_num = phone.match(/\d/)
-  capture_num && phone(/\d/)
+  capture_num && phone.match(/\d/)
 end

@@ -20,6 +20,6 @@ end
 
 def valid_phone_number?(phone)
   # binding.pry
-  capture_num = phone.match(/\d/)
+  capture_num = phone.match((/\d/))
   capture_num.match(/\d{10}/)
 end

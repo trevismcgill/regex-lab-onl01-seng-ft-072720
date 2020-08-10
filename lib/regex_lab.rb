@@ -19,6 +19,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-phone.scan(/(^\d*$)/).to_s.match(/\d{10}/)
-# binding.pry
+cap_num = phone.scan(/(^\d*$)/)
+binding.pry
 end
